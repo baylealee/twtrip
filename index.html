@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>基隆親子一日行程</title>
+<style>
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  background: #f6f3ee;
+  color: #2f2f2f;
+}
+header {
+  padding: 22px 18px;
+  background: linear-gradient(135deg, #5f7d6a, #c97945);
+  color: #fff;
+}
+header h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+}
+header p {
+  margin: 0;
+  opacity: .95;
+}
+.wrapper {
+  max-width: 760px;
+  margin: 0 auto;
+}
+.tabs {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  border-bottom: 1px solid #e6ddd2;
+}
+.tabs label {
+  flex: 1;
+  text-align: center;
+  padding: 14px 8px;
+  font-weight: 700;
+  color: #6b6259;
+  cursor: pointer;
+}
+input[type="radio"] {
+  display: none;
+}
+.panel {
+  display: none;
+  padding: 16px;
+}
+#tab1:checked ~ .tabs label[for="tab1"],
+#tab2:checked ~ .tabs label[for="tab2"],
+#tab3:checked ~ .tabs label[for="tab3"] {
+  background: #eef3ee;
+  color: #4f755d;
+}
+#tab1:checked ~ #schedule,
+#tab2:checked ~ #items,
+#tab3:checked ~ #maps {
+  display: block;
+}
+.card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 14px;
+  box-shadow: 0 3px 12px rgba(80, 60, 40, .08);
+}
+.time {
+  color: #c97945;
+  font-weight: 800;
+  font-size: 17px;
+}
+.card h3 {
+  margin: 6px 0 8px;
+}
+.card p {
+  margin: 0;
+  line-height: 1.55;
+}
+.badge {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f1e4d8;
+  color: #935936;
+  border-radius: 999px;
+  font-size: 13px;
+  margin-top: 8px;
+}
+ul {
+  padding-left: 20px;
+  line-height: 1.9;
+  margin: 6px 0 0;
+}
+.map-btn {
+  display: block;
+  text-align: center;
+  margin-top: 12px;
+  padding: 12px 14px;
+  background: #5f7d6a;
+  color: white;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 700;
+}
+.note {
+  background: #fff7ed;
+  border-left: 5px solid #c97945;
+}
+.small {
+  color: #706861;
+  font-size: 14px;
+}
+</style>
+</head>
+<body>
+<div class="wrapper">
+<header>
+  <h1>基隆親子一日行程</h1>
+  <p>桃園出發｜買潤餅｜室內遊樂園｜午睡｜外木山玩水玩沙</p>
+</header>
+
+<input type="radio" id="tab1" name="tabs" checked>
+<input type="radio" id="tab2" name="tabs">
+<input type="radio" id="tab3" name="tabs">
+
+<div class="tabs">
+  <label for="tab1">行程</label>
+  <label for="tab2">攜帶物品</label>
+  <label for="tab3">Google Map</label>
+</div>
+
+<section id="schedule" class="panel">
+  <div class="card note">
+    <h3>今日節奏</h3>
+    <p>先室內放電、回西定路午睡，下午再去外木山玩水玩沙。潤餅可當下午海邊野餐。</p>
+  </div>
+
+  <div class="card">
+    <div class="time">10:00</div>
+    <h3>桃園出門 → 接大亨</h3>
+    <p>車上先準備水、小點心、小玩具，避免還沒到基隆就餓或累。</p>
+  </div>
+
+  <div class="card">
+    <div class="time">11:00</div>
+    <h3>到基隆買潤餅</h3>
+    <p>建議多買幾份，下午帶去外木山當便當或野餐食物。</p>
+    <span class="badge">可外帶</span>
+  </div>
+
+  <div class="card">
+    <div class="time">11:30</div>
+    <h3>方案 2：古月香牛肉麵</h3>
+    <p>午餐簡單吃，不要吃太久，保留 12:30 入場時間。</p>
+  </div>
+
+  <div class="card">
+    <div class="time">12:30</div>
+    <h3>安樂室內遊樂園</h3>
+    <p>室內放電約 1 小時，玩到 13:20 左右準備離開，銜接午睡。</p>
+    <span class="badge">親子放電</span>
+  </div>
+
+  <div class="card">
+    <div class="time">13:30</div>
+    <h3>回西定路睡覺</h3>
+    <p>目標 14:00 前睡著，睡到 15:00～15:20，下午玩水比較穩。</p>
+  </div>
+
+  <div class="card">
+    <div class="time">15:30</div>
+    <h3>外木山游泳、玩沙</h3>
+    <p>帶便當或潤餅去。建議到場先找陰影處或方便沖洗的位置。</p>
+    <span class="badge">玩水玩沙</span>
+  </div>
+
+  <div class="card">
+    <div class="time">18:00</div>
+    <h3>結束</h3>
+    <p>先沖腳、擦乾、換衣服，再上車回程。小孩通常回程會直接睡。</p>
+  </div>
+</section>
+
+<section id="items" class="panel">
+  <div class="card">
+    <h3>小孩基本用品</h3>
+    <ul>
+      <li>替換衣物 2 套</li>
+      <li>尿布、濕紙巾、衛生紙</li>
+      <li>水壺、點心、水果</li>
+      <li>午睡小被子或安撫物</li>
+      <li>薄外套或包巾</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>外木山玩水玩沙</h3>
+    <ul>
+      <li>泳衣、泳褲</li>
+      <li>大浴巾、擦腳毛巾</li>
+      <li>玩沙工具</li>
+      <li>防滑鞋或涼鞋</li>
+      <li>防曬、帽子</li>
+      <li>裝濕衣服的袋子</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h3>野餐／晚餐</h3>
+    <ul>
+      <li>潤餅或便當</li>
+      <li>飲料、水</li>
+      <li>水果、小餅乾</li>
+      <li>野餐墊</li>
+      <li>垃圾袋</li>
+    </ul>
+  </div>
+
+  <div class="card note">
+    <h3>上車前確認</h3>
+    <p>手機、錢包、鑰匙、濕衣袋、玩沙工具、小孩鞋子都要收齊。</p>
+  </div>
+</section>
+
+<section id="maps" class="panel">
+  <div class="card">
+    <h3>基隆潤餅</h3>
+    <p class="small">11:00 抵達，外帶下午海邊可吃。</p>
+    <a class="map-btn" href="https://maps.app.goo.gl/apHQJsfGqxGYCJJV8?g_st=ic" target="_blank">開啟 Google Map</a>
+  </div>
+
+  <div class="card">
+    <h3>安樂室內遊樂園</h3>
+    <p class="small">12:30 入場，玩到約 13:20 離開。</p>
+    <a class="map-btn" href="https://maps.app.goo.gl/s9sd4Z9Tyiqqtswy9?g_st=ic" target="_blank">開啟 Google Map</a>
+  </div>
+
+  <div class="card">
+    <h3>外木山海濱風景區</h3>
+    <p class="small">15:30 玩水玩沙，18:00 結束。</p>
+    <a class="map-btn" href="https://maps.google.com/?q=外木山海濱風景區" target="_blank">開啟 Google Map</a>
+  </div>
+
+  <div class="card">
+    <h3>古月香牛肉麵</h3>
+    <p class="small">11:30 午餐。若要更精準，可再替換成店家的 Google Map 分享連結。</p>
+    <a class="map-btn" href="https://maps.google.com/?q=基隆 古月香牛肉麵" target="_blank">搜尋 Google Map</a>
+  </div>
+</section>
+</div>
+</body>
+</html>
