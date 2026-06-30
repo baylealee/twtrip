@@ -1,21 +1,125 @@
 <!doctype html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>泉哥67世界巡演｜陽明山站</title>
-<style>
-:root{--pine:#2f6a57;--cream:#f7f5ec;--ink:#2d3b35;--line:#d8e0d8;--blue:#eaf2ff}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:62px}body{margin:0;background:var(--cream);color:var(--ink);font:18px/1.72 -apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif}.wrap{max-width:820px;margin:auto;min-height:100vh}.hero{padding:34px 24px 28px;background:linear-gradient(135deg,#245d4a,#75a36d);color:#fff;border-radius:0 0 28px 28px}.hero h1{margin:0;font-size:clamp(34px,9vw,58px);line-height:1.18}.hero p{margin:12px 0 0;font-weight:800;font-size:18px}.topnav{position:sticky;top:0;z-index:8;display:flex;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 13px rgba(36,93,74,.11)}.topnav a{flex:1;padding:16px 7px;text-align:center;text-decoration:none;color:var(--pine);font-weight:900;font-size:15px;white-space:nowrap}.section{padding:25px 16px 4px}.section h2{font-size:30px;line-height:1.2;color:var(--pine);margin:0 0 16px}.card{background:#fff;border:1px solid var(--line);border-radius:21px;padding:18px 16px;margin:0 0 18px;box-shadow:0 5px 17px rgba(36,93,74,.09)}.time{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--pine);color:#fff;font-size:16px;line-height:1;font-weight:900}.card h3{font-size:24px;line-height:1.25;margin:14px 0 8px}.card p{margin:0;color:#4a5f55}.map{display:block;margin-top:16px;padding:14px;text-decoration:none;text-align:center;background:var(--pine);border-radius:14px;color:#fff;font-weight:900}.note{padding:16px;border-radius:16px;background:#f6ebc9;border-left:5px solid #c79a3b;margin:0 0 16px}.dress{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.dress div{min-height:126px;padding:16px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff;border:1px solid var(--line);border-radius:18px;font-weight:900;font-size:16px}.dress span{font-size:28px;display:block;margin-bottom:10px}.rain{padding:18px;border-radius:20px;background:var(--blue);border-left:6px solid #78a8eb}.footer{padding:20px 15px 34px;text-align:center;color:#a7afaa;font-size:14px}@media(max-width:420px){.dress{gap:9px}.dress div{font-size:14px;min-height:112px}.dress span{font-size:24px}}@media(min-width:700px){.section{padding:30px 22px 7px}.topnav a{font-size:17px}}</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>泉哥67世界巡演｜陽明山站</title>
+  <style>
+    :root{--pine:#2f6a57;--cream:#f7f5ec;--ink:#2d3b35;--line:#d8e0d8;--blue:#eaf2ff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;scroll-padding-top:62px}
+    body{margin:0;background:var(--cream);color:var(--ink);font:18px/1.72 -apple-system,BlinkMacSystemFont,"Noto Sans TC","Microsoft JhengHei",sans-serif}
+    .wrap{max-width:820px;margin:auto;min-height:100vh;background:var(--cream)}
+    .hero{padding:0 0 12px}
+    .hero img{display:block;width:100%;height:auto;border-radius:0 0 28px 28px}
+    .topnav{position:sticky;top:0;z-index:8;display:flex;background:#fff;border-bottom:1px solid var(--line);box-shadow:0 3px 13px rgba(36,93,74,.11)}
+    .topnav a{flex:1;padding:16px 7px;text-align:center;text-decoration:none;color:var(--pine);font-weight:900;font-size:15px;white-space:nowrap}
+    .section{padding:25px 16px 4px}
+    .section h2{font-size:30px;line-height:1.2;color:var(--pine);margin:0 0 16px}
+    .card{background:#fff;border:1px solid var(--line);border-radius:21px;overflow:hidden;margin:0 0 18px;box-shadow:0 5px 17px rgba(36,93,74,.09)}
+    .card img{display:block;width:100%;height:auto}
+    .card-body{padding:18px 16px 16px}
+    .time{display:inline-block;padding:7px 14px;border-radius:999px;background:var(--pine);color:#fff;font-size:16px;line-height:1;font-weight:900}
+    .card h3{font-size:24px;line-height:1.25;margin:14px 0 8px}
+    .card p{margin:0;color:#4a5f55}
+    .map{display:block;margin-top:16px;padding:14px;text-decoration:none;text-align:center;background:var(--pine);border-radius:14px;color:#fff;font-weight:900}
+    .note{padding:16px;border-radius:16px;background:#f6ebc9;border-left:5px solid #c79a3b;margin:0 0 16px}
+    .dress{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+    .dress div{min-height:126px;padding:16px 8px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;background:#fff;border:1px solid var(--line);border-radius:18px;font-weight:900;font-size:16px}
+    .dress span{font-size:28px;display:block;margin-bottom:10px}
+    .rain{padding:0;border-radius:20px;overflow:hidden;background:var(--blue);border-left:6px solid #78a8eb}
+    .rain img{display:block;width:100%;height:auto}
+    .rain-body{padding:18px}
+    .footer{padding:20px 15px 34px;text-align:center;color:#a7afaa;font-size:14px}
+    @media(max-width:420px){.dress{gap:9px}.dress div{font-size:14px;min-height:112px}.dress span{font-size:24px}}
+    @media(min-width:700px){.section{padding:30px 22px 7px}.topnav a{font-size:17px}}
+  </style>
 </head>
 <body>
 <main class="wrap">
-<header class="hero"><h1>《泉哥67 世界巡演》<br>陽明山站</h1><p>生日快樂・Happy 67th Birthday</p></header>
-<nav class="topnav"><a href="#food">聚餐</a><a href="#forest">森呼吸</a><a href="#dress">Dress Code</a><a href="#rain">雨天備案</a></nav>
-<section class="section" id="food"><h2>行程表</h2><article class="card"><span class="time">13:30－15:00</span><h3>松竹園聚餐</h3><p>台北市士林區永公路546號。先用餐、慶生、聊天，再前往陽明山。</p><a class="map" target="_blank" href="https://maps.google.com/?q=松竹園+台北市士林區永公路546號">開啟松竹園地圖</a></article></section>
-<section class="section" id="forest"><h2>陽明山森呼吸</h2><div class="note">15:05 雷隱橋集合。請穿好走的鞋；雨後石階可能較滑。</div><article class="card"><span class="time">15:05－15:35</span><h3>草山觀瀑吊橋</h3><p>看瀑布、拍團體照，別急著趕路。</p></article><article class="card"><span class="time">15:35－16:15</span><h3>猴崁古道</h3><p>慢慢走、邊聊天，以壽星和同行者舒服的節奏為主。</p></article><article class="card"><span class="time">16:15－17:10</span><h3>十八份圳步道</h3><p>沿水圳與林蔭收尾，安排最後一張全員合照。</p><a class="map" target="_blank" href="https://maps.google.com/?q=雷隱橋">開啟雷隱橋地圖</a></article></section>
-<section class="section" id="dress"><h2>🎁 今日 Dress Code</h2><div class="dress"><div><span>😊</span>帶著笑容</div><div><span>📸</span>帶著手機</div><div><span>👟</span>穿好走的鞋</div></div><article class="card" style="margin-top:16px"><h3 style="margin-top:0">出發提醒</h3><p>建議攜帶水、輕便雨衣與防蚊用品。雨後石階可能較滑，鞋底需有止滑效果。</p></article></section>
-<section class="section" id="rain"><h2>☂️ 雨天備案</h2><div class="rain"><span class="time">雨天改走室內版</span><h3 style="margin:15px 0 9px;font-size:26px">🦖 臺博館古生物館</h3><p>若雷雨或雨勢明顯，保留松竹園聚餐，下午改走室內古生物館，不安排濕滑山路。</p><a class="map" target="_blank" href="https://maps.google.com/?q=臺博館古生物館">開啟古生物館地圖</a></div></section>
-<div class="footer">《泉哥67 世界巡演－陽明山站》｜2026.07.04</div>
+  <header class="hero" id="top">
+    <img src="assets/quange-v8/quange67-hero.jpg" alt="泉哥67世界巡演陽明山站主圖">
+  </header>
+
+  <nav class="topnav">
+    <a href="#food">聚餐</a>
+    <a href="#forest">森呼吸</a>
+    <a href="#dress">Dress Code</a>
+    <a href="#rain">雨天備案</a>
+  </nav>
+
+  <section class="section" id="food">
+    <h2>行程表</h2>
+    <article class="card">
+      <img src="assets/quange-v8/quange67-food.jpg" alt="松竹園聚餐照片">
+      <div class="card-body">
+        <span class="time">13:30－15:00</span>
+        <h3>松竹園聚餐</h3>
+        <p>台北市士林區永公路546號。先用餐、慶生、聊天，再前往陽明山。</p>
+        <a class="map" target="_blank" href="https://maps.google.com/?q=松竹園+台北市士林區永公路546號">開啟松竹園地圖</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="forest">
+    <h2>陽明山森呼吸</h2>
+    <div class="note">15:05 雷隱橋集合。請穿好走的鞋；雨後石階可能較滑。</div>
+    <article class="card">
+      <img src="assets/quange-v8/quange67-bridge.jpg" alt="草山觀瀑吊橋照片">
+      <div class="card-body">
+        <span class="time">15:05－15:35</span>
+        <h3>草山觀瀑吊橋</h3>
+        <p>看瀑布、拍團體照，別急著趕路。</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/quange-v8/quange67-forest.jpg" alt="猴崁古道照片">
+      <div class="card-body">
+        <span class="time">15:35－16:15</span>
+        <h3>猴崁古道</h3>
+        <p>慢慢走、邊聊天，以壽星和同行者舒服的節奏為主。</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="assets/quange-v8/quange67-scenic.jpg" alt="十八份圳步道景觀照片">
+      <div class="card-body">
+        <span class="time">16:15－17:10</span>
+        <h3>十八份圳步道</h3>
+        <p>沿水圳與林蔭收尾，安排最後一張全員合照。</p>
+        <a class="map" target="_blank" href="https://maps.google.com/?q=雷隱橋">開啟雷隱橋地圖</a>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="dress">
+    <h2>🎁 今日 Dress Code</h2>
+    <div class="dress">
+      <div><span>😊</span>帶著笑容</div>
+      <div><span>📸</span>帶著手機</div>
+      <div><span>👟</span>穿好走的鞋</div>
+    </div>
+    <article class="card" style="margin-top:16px">
+      <div class="card-body">
+        <h3 style="margin-top:0">出發提醒</h3>
+        <p>建議攜帶水、輕便雨衣與防蚊用品。雨後石階可能較滑，鞋底需有止滑效果。</p>
+      </div>
+    </article>
+  </section>
+
+  <section class="section" id="rain">
+    <h2>☂️ 雨天備案</h2>
+    <div class="rain">
+      <img src="assets/quange-v8/quange67-dino.jpg" alt="臺博館古生物館照片">
+      <div class="rain-body">
+        <span class="time">雨天改走室內版</span>
+        <h3 style="margin:15px 0 9px;font-size:26px">🦖 臺博館古生物館</h3>
+        <p>若雷雨或雨勢明顯，保留松竹園聚餐，下午改走室內古生物館，不安排濕滑山路。</p>
+        <a class="map" target="_blank" href="https://maps.google.com/?q=臺博館古生物館">開啟古生物館地圖</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer">《泉哥67 世界巡演－陽明山站》｜2026.07.04</div>
 </main>
 </body>
 </html>
